@@ -5,6 +5,8 @@ import Portfoli_1 from '../views/1_Pages/4_Protfolio_1/Layout.vue'
 import Portfoli_3 from '../views/1_Pages/3_Portfolio_3/Layout.vue'
 import Portfoli_2 from '../views/1_Pages/5_Portfolio_2/Layout.vue'
 import Services from '../views/1_Pages/6_Services/Layout.vue'
+import Service from '../views/1_Pages/7_Service/Layout.vue'
+
 
 
 
@@ -44,6 +46,11 @@ const router = createRouter({
       path: '/services',
       name: 'services',
       component: Services
+    },
+    {
+      path: '/single-service',
+      name: 'service',
+      component: Service
     },
   ]
 })

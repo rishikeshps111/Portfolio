@@ -143,60 +143,60 @@ export default {
             
                 ***************************/
 
-                let groups = gsap.utils.toArray(".mil-accordion-group");
-                let menus = gsap.utils.toArray(".mil-accordion-menu");
-                let menuToggles = groups.map(createAnimation);
+                // let groups = gsap.utils.toArray(".mil-accordion-group");
+                // let menus = gsap.utils.toArray(".mil-accordion-menu");
+                // let menuToggles = groups.map(createAnimation);
 
-                menus.forEach((menu) => {
-                    menu.addEventListener("click", () => toggleMenu(menu));
-                });
+                // menus.forEach((menu) => {
+                //     menu.addEventListener("click", () => toggleMenu(menu));
+                // });
 
-                function toggleMenu(clickedMenu) {
-                    menuToggles.forEach((toggleFn) => toggleFn(clickedMenu));
-                }
+                // function toggleMenu(clickedMenu) {
+                //     menuToggles.forEach((toggleFn) => toggleFn(clickedMenu));
+                // }
 
-                function createAnimation(element) {
-                    let menu = element.querySelector(".mil-accordion-menu");
-                    let box = element.querySelector(".mil-accordion-content");
-                    let symbol = element.querySelector(".mil-symbol");
-                    let minusElement = element.querySelector(".mil-minus");
-                    let plusElement = element.querySelector(".mil-plus");
+                // function createAnimation(element) {
+                //     let menu = element.querySelector(".mil-accordion-menu");
+                //     let box = element.querySelector(".mil-accordion-content");
+                //     let symbol = element.querySelector(".mil-symbol");
+                //     let minusElement = element.querySelector(".mil-minus");
+                //     let plusElement = element.querySelector(".mil-plus");
 
-                    gsap.set(box, {
-                        height: "auto",
-                    });
+                //     gsap.set(box, {
+                //         height: "auto",
+                //     });
 
-                    let animation = gsap
-                        .timeline()
-                        .from(box, {
-                            height: 0,
-                            duration: 0.4,
-                            ease: "sine"
-                        })
-                        .from(minusElement, {
-                            duration: 0.4,
-                            autoAlpha: 0,
-                            ease: "none",
-                        }, 0)
-                        .to(plusElement, {
-                            duration: 0.4,
-                            autoAlpha: 0,
-                            ease: "none",
-                        }, 0)
-                        .to(symbol, {
-                            background: accent,
-                            ease: "none",
-                        }, 0)
-                        .reverse();
+                //     let animation = gsap
+                //         .timeline()
+                //         .from(box, {
+                //             height: 0,
+                //             duration: 0.4,
+                //             ease: "sine"
+                //         })
+                //         .from(minusElement, {
+                //             duration: 0.4,
+                //             autoAlpha: 0,
+                //             ease: "none",
+                //         }, 0)
+                //         .to(plusElement, {
+                //             duration: 0.4,
+                //             autoAlpha: 0,
+                //             ease: "none",
+                //         }, 0)
+                //         .to(symbol, {
+                //             background: accent,
+                //             ease: "none",
+                //         }, 0)
+                //         .reverse();
 
-                    return function (clickedMenu) {
-                        if (clickedMenu === menu) {
-                            animation.reversed(!animation.reversed());
-                        } else {
-                            animation.reverse();
-                        }
-                    };
-                }
+                //     return function (clickedMenu) {
+                //         if (clickedMenu === menu) {
+                //             animation.reversed(!animation.reversed());
+                //         } else {
+                //             animation.reverse();
+                //         }
+                //     };
+                // }
                 /***************************
             
                 back to top
