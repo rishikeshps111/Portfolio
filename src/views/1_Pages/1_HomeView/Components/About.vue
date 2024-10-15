@@ -1,0 +1,58 @@
+<template>
+    <!-- about -->
+    <section id="about" ref="aboutSection">
+        <div class="container mil-p-120-30">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 col-xl-5">
+
+                    <div class="mil-mb-90">
+                        <h2 class="mil-up mil-mb-60">Discover <br>Our <span class="mil-thin">Studio</span></h2>
+                        <p class="mil-up mil-mb-30">At our design studio, we are a collective of talented individuals
+                            ignited by
+                            our unwavering passion for transforming ideas into reality. With a harmonious blend of
+                            diverse
+                            backgrounds and a vast array of skill sets, we join forces to create compelling solutions
+                            for our
+                            esteemed clients.</p>
+
+                        <p class="mil-up mil-mb-60">Collaboration is at the heart of what we do. Our team thrives on the
+                            synergy
+                            that arises when unique perspectives converge, fostering an environment of boundless
+                            creativity. By
+                            harnessing our collective expertise, we produce extraordinary results that consistently
+                            surpass
+                            expectations.</p>
+
+                        <div class="mil-about-quote">
+                            <div class="mil-avatar mil-up">
+                                <img src="/assets/img/faces/customers/2.jpg" alt="Founder">
+                            </div>
+                            <h6 class="mil-quote mil-up">Passionately Creating <span class="mil-thin">Design
+                                    Wonders:</span>
+                                Unleashing <span class="mil-thin">Boundless Creativity</span></h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+
+                    <div class="mil-about-photo mil-mb-90">
+                        <div class="mil-lines-place"></div>
+                        <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
+                            <img src="/assets/img/photo/1.jpg" alt="img" class="mil-scale" data-value-1="1"
+                                data-value-2="1.2">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+</template>
+
+<script setup>
+
+</script>
+
+<style lang="scss" scoped></style>
