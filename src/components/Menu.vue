@@ -112,7 +112,7 @@ const menuItems = ref([
         active: false,
         children: [
             { title: 'Services List', routerLink: '/services' },
-            { title: 'Single service', href: 'service.html' }
+            { title: 'Single service', routerLink: 'single-service' }
         ]
     },
     {
